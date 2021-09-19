@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b486c74e-c7a8-46c7-9c5b-2f42e4f93ee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Ecomm/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ecomm/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/theme/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/theme/_contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/scss/theme/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/scss/theme/_contact.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
