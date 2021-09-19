@@ -28,7 +28,7 @@ class GetData:
         url = f"https://www.google.com/search?q={cat.name.replace(' ', '+')}&source=lnms&tbm=shop&sa=X&ved=2ahUKEwiu6_CU3JTyAhVxzTgGHafJCQIQ_AUoAnoECAIQBA&biw=1422&bih=1014"
         res = requests.get(url)
         page = BeautifulSoup(res.content, 'html.parser')
-        div = page.find_all('div', {'class': 'KZmu8e'})[:5]
+        div = page.find_all('div', {'class': 'KZmu8e'})[:15]
         for key, product in enumerate(div):
             filename = cat.name
             img = product.find('img')   
@@ -41,7 +41,7 @@ class GetData:
                     f.write(chunk)
             try:
                 p = Product(
-                        name=title.text.split('(')[0],
+                        name=title.text.split('(')[0][:15],
                         description=title.text,
                         price=float(price.text[1:].replace(',', '').split()[0]),
                         category=cat,
