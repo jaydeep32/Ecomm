@@ -1,0 +1,6 @@
+
+<ul class="list instafeed d-flex flex-wrap">
+    {% for product in products %}
+        <li><img src="{{ product.pic.url }}" alt="" style="height:50px;width:auto;"></li>
+    {% endfor %}
+</ul>

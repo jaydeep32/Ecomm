@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+	<!-- ================ start banner area ================= -->	
+	<section class="blog-banner-area" id="category">
+		<div class="container h-100">
+			<div class="blog-banner">
+				<div class="text-center">
+					<h1>Shop Category</h1>
+					<nav aria-label="breadcrumb" class="banner-breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Shop Category</li>
+            </ol>
+          </nav>
+				</div>
+			</div>
+    </div>
+	</section>
+	<!-- ================ end banner area ================= -->
+
+
+	<!-- ================ category section start ================= -->		  
+  <section class="section-margin--small mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-4 col-md-5">
+          <div class="sidebar-categories">
+            <div class="head">Browse Categories</div>
+            <ul class="main-categories">
+              <li class="common-filter">
+                <form action="#">
+                  <ul>
+                  {% for category in categories %}
+                    <li class="filter-list">
+                      <input class="pixel-radio" type="radio" id="category-{{ category.pk }}" name="category" onchange='change("{{ category.slug }}")' value="{{ category.slug }}">
+                      <label for="category-{{ category.pk }}">{{ category.name }}<span> ({{ category.total_product }})</span></label>
+                    </li>
+                  {% endfor %}
+                  </ul>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-filter">
+            <div class="top-filter-head">Product Filters</div>
+            <div class="common-filter">
+              <div class="head">Price</div>
+              <form action="#">
+                <ul>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="hightolow" name="price" value="-price" onchange='price_sorting("-price")'>
+                    <label for="hightolow">High t low<span></span></label></li>
+                  <li class="filter-list"><input class="pixel-radio" type="radio" id="lowtohigh" name="price" value="price" onchange='price_sorting("price")'>
+                    <label for="lowtohigh">Low to high<span></span></label></li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-8 col-md-7">
+          <!-- Start Filter Bar -->
+          <div class="filter-bar d-flex flex-wrap align-items-center">
+            <div class="sorting">
+              <select name="sort" onchange="select()" id="sort">
+                <option value="name">Ascending</option>
+                <option value="-name">Descending</option>
+              </select>
+            </div>
+            <div>
+              <div class="input-group filter-bar-search">
+                <input type="text" placeholder="Search" name="search" onkeypress="">
+                <div class="input-group-append">
+                  <button type="button"><i class="ti-search"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Filter Bar -->
+          <!-- Start Best Seller -->
+          <section class="lattest-product-area pb-40 category-list">
+            <div class="row" id="filter-product-list">
+              
+            </div>
+          </section>
+          <!-- End Best Seller -->
+        </div>
+      </div>
+    </div>
+  </section>
+	<!-- ================ category section end ================= -->		  
+
+	<!-- ================ top product area start ================= -->	
+	<section class="related-product-area">
+		<div class="container">
+			<div class="section-intro pb-60px">
+        <p>Popular Item in the market</p>
+        <h2>Top <span class="section-intro__style">Product</span></h2>
+      </div>
+			<div class="row mt-30">
+
+        {% for product in best_seller %}
+					<div class="col-sm-6 col-xl-3 mb-4 mb-xl-0 mt-3">
+						<div class="single-search-product-wrapper">
+							<div class="single-search-product d-flex">
+								<a href="{% url 'product:product-detail' product.product.slug  %}">
+									<img src="{{ product.product.pic.url }}" alt="">
+								</a>
+								<div class="desc">
+									<a href="{% url 'product:product-detail' product.product.slug  %}" class="title">{{ product.product.name }}</a>
+									<div class="price">Rs. {{ product.product.price	}}</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+
+      </div>
+		</div>
+	</section>
+	<!-- ================ top product area end ================= -->		
+
+	<!-- ================ Subscribe section start ================= -->		  
+  <section class="subscribe-position">
+    <div class="container">
+      <div class="subscribe text-center">
+        <h3 class="subscribe__title">Get Update From Anywhere</h3>
+        <p>Bearing Void gathering light light his eavening unto dont afraid</p>
+        <div id="mc_embed_signup">
+          <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe-form form-inline mt-5 pt-1">
+            <div class="form-group ml-sm-auto">
+              <input class="form-control mb-1" type="email" name="EMAIL" placeholder="Enter your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '" >
+              <div class="info"></div>
+            </div>
+            <button class="button button-subscribe mr-auto mb-1" type="submit">Subscribe Now</button>
+            <div style="position: absolute; left: -5000px;">
+              <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+            </div>
+
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+	<!-- ================ Subscribe section end ================= -->		  
+
+{% endblock content %}
+
+{% block scripts %}}
+  <script>
+    function getCookie(name) {
+      let cookieValue = null;
+      if (document.cookie && document.cookie !== '') {
+          const cookies = document.cookie.split(';');
+          for (let i = 0; i < cookies.length; i++) {
+              const cookie = cookies[i].trim();
+              // Does this cookie string begin with the name we want?
+              if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                  cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                  break;
+              }
+          }
+      }
+      return cookieValue;
+    }
+    const csrftoken = getCookie('csrftoken');
+
+    function sent_request(cat, url){
+      //console.log(url)
+      $.ajax({
+        type: "POST",
+        url: url,
+        data: {
+          "name": cat,
+          csrfmiddlewaretoken: csrftoken,
+        },
+        success: function(res){
+          $("#filter-product-list").html(res)
+        },
+        error: function(err){
+          console.log(err.responseText)
+        },
+      })
+    }
+
+    function get_val(){
+      price = $('input[name="price"]:checked').val()
+      cat = $('input[name="category"]:checked').val()
+      dropdown = $('#sort option:selected').val()
+      if(typeof cat == "undefined"){
+        cat = 'None'
+      }if(typeof price == "undefined"){
+        price = 'None'
+      }if(typeof dropdown == "undefined"){
+        dropdown = 'None'
+      }
+      url = window.location.origin + '/category/' + cat + '/' + price + '/' + dropdown + '/'
+    }
+    
+    $( document ).ready(function() {
+      get_val()
+      sent_request("None", url)
+    });
+    
+    
+    function change(cat){
+      get_val()
+      sent_request(cat, url)
+    }
+    function price_sorting(price){
+      get_val()
+      sent_request(cat, url)
+      //console.log(url)
+    }
+    function select(){
+      get_val()
+      price = 'None'
+      url = window.location.origin + '/category/' + cat + '/' + price + '/' + dropdown + '/'
+      sent_request(cat, url)
+    }
+    function searchh(){
+      search = $('input[name="search"]').val()
+      url = window.location.origin + '/product/search/'
+      sent_request(search, url)
+      console.log(search)
+    }
+  </script>
+{% endblock scripts %}
