@@ -2,47 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b486c74e-c7a8-46c7-9c5b-2f42e4f93ee9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_scrapping.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_scrapping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Accessories0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Accessories0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Accessories1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Accessories1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Cameras_and_Photos0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Cameras_and_Photos0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Cameras_and_Photos1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Cameras_and_Photos1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Cameras_and_Photos2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Cameras_and_Photos2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Cameras_and_Photos3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Cameras_and_Photos3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Cameras_and_Photos4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Cameras_and_Photos4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Computer_and_Laptops0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Computer_and_Laptops0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Computer_and_Laptops1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Computer_and_Laptops1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Computer_and_Laptops2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Computer_and_Laptops2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Computer_and_Laptops3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Computer_and_Laptops3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Computer_and_Laptops4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Computer_and_Laptops4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Gadgets1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Gadgets1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Gadgets2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Gadgets2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Gadgets3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Gadgets3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Gadgets4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Gadgets4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Hardware0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Hardware0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Hardware1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Hardware1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/TV_and_Audio0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/TV_and_Audio0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/TV_and_Audio1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/TV_and_Audio1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/TV_and_Audio2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/TV_and_Audio2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/TV_and_Audio3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/TV_and_Audio3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/TV_and_Audio4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/TV_and_Audio4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Video_and_and_consoles0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Video_and_and_consoles0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Video_and_and_consoles1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Video_and_and_consoles1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Video_and_and_consoles2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Video_and_and_consoles2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Video_and_and_consoles3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Video_and_and_consoles3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/Video_and_and_consoles4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/Video_and_and_consoles4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/car_Electronics0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/car_Electronics0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/car_Electronics1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/car_Electronics1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/car_Electronics2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/car_Electronics2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/car_Electronics3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/car_Electronics3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/car_Electronics4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/car_Electronics4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/smartphones_and_Tablets0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/smartphones_and_Tablets0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/smartphones_and_Tablets1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/smartphones_and_Tablets1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/smartphones_and_Tablets2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/smartphones_and_Tablets2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/smartphones_and_Tablets3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/smartphones_and_Tablets3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/img/products/smartphones_and_Tablets4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/products/smartphones_and_Tablets4.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
